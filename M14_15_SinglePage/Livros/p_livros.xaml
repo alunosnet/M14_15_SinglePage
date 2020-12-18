@@ -1,0 +1,32 @@
+﻿<Page x:Class="M14_15_SinglePage.Livros.p_livros"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:M14_15_SinglePage.Livros"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="p_livros">
+
+    <Grid>
+        <Label Content="Nome" Margin="50,68,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="59"/>
+        <TextBox x:Name="tbNome" HorizontalAlignment="Left" Margin="146,68,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ano" HorizontalAlignment="Left" Margin="50,113,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbAno" HorizontalAlignment="Left" Margin="146,113,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Data" HorizontalAlignment="Left" Margin="50,162,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="DPData" HorizontalAlignment="Left" Margin="146,162,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Preço" HorizontalAlignment="Left" Margin="50,217,0,0" VerticalAlignment="Top"/>
+        <Label Content="Capa" HorizontalAlignment="Left" Margin="50,262,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="ImgCapa" HorizontalAlignment="Left" Height="100" Margin="129,275,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="..." HorizontalAlignment="Left" Margin="40,310,0,0" VerticalAlignment="Top" Width="50" Click="Button_Click_1"/>
+        <Button Content="Adicionar" HorizontalAlignment="Left" Margin="448,370,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="Button_Click"/>
+        <Button x:Name="btRemover" Visibility="Hidden" Content="Remover" HorizontalAlignment="Left" Margin="582,370,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="Button_Click_2"/>
+        <TextBox x:Name="tbPreco" HorizontalAlignment="Left" Margin="146,221,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DataGrid Name="DGLivros" Height="300" Margin="340,51,0,0" HorizontalAlignment="Left" Width="400" VerticalAlignment="Top" SelectionChanged="DGLivros_SelectionChanged" AutoGeneratingColumn="DGLivros_AutoGeneratingColumn"/>
+        <Button Content="Limpar" HorizontalAlignment="Left" Margin="340,370,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="Button_Click_3"/>
+        <Button x:Name="btAtualizar" Content="Atualizar" Visibility="Hidden" HorizontalAlignment="Left" Margin="219,370,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="Button_Click_4"/>
+        <TextBox Name="tbPesquisar" TextChanged="tbPesqusiar_TextChanged" HorizontalAlignment="Left" Margin="594,35,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Imprimir" Click="Button_Click_5"  HorizontalAlignment="Left" Margin="345,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.437,-0.446" Width="85"/>
+
+    </Grid>
+</Page>
