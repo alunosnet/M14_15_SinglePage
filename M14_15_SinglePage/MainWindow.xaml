@@ -8,11 +8,11 @@
         Title="MainWindow" Height="450" Width="900">
     <Grid>
         <Menu HorizontalAlignment="left" Width="100">
-            <MenuItem Header="Leitores" Click="MenuItem_Click"></MenuItem>
-            <MenuItem Header="Livros" Click="MenuItem_Click_1"></MenuItem>
-            <MenuItem Header="Empréstimos" Click="MenuItem_Click_2"></MenuItem>
-            <MenuItem Header="Consultas" Click="MenuItem_Click_4"></MenuItem>
-            <MenuItem Header="Sair" Click="MenuItem_Click_3"></MenuItem>
+            <MenuItem Width="100" Header="Leitores" Click="MenuItem_Click"></MenuItem>
+            <MenuItem Width="100" Header="Livros" Click="MenuItem_Click_1"></MenuItem>
+            <MenuItem Width="100" Header="Empréstimos" Click="MenuItem_Click_2"></MenuItem>
+            <MenuItem Width="100" Header="Consultas" Click="MenuItem_Click_4"></MenuItem>
+            <MenuItem Width="100" Header="Sair" Click="MenuItem_Click_3"></MenuItem>
         </Menu>
         <DockPanel Margin="100,0,0,0">
             <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Hidden" />
